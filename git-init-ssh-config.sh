@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "This script updates your git username and email. It then optinally generates a 4096 bit RSA key and optionally displays the public RSA key from the default location."
 echo "Enter your github username"
 read UNAME
 echo "Enter your github email."
