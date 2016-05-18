@@ -39,3 +39,8 @@ touch /etc/apt/sources.list.d/docker.list
 echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee docker.list
 apt-get install linux-image-extra-$(uname -r)
 apt-get install -y docker-engine
+apt-get install -y python-pip
+pip install --upgrade pip
+pip install docker-compose
+chmod 770 /usr/local/bin/docker-compose
+
