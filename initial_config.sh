@@ -43,4 +43,8 @@ apt-get install -y python-pip
 pip install --upgrade pip
 pip install docker-compose
 chmod 770 /usr/local/bin/docker-compose
-
+#install meteor
+apt-get install -y curl
+curl https://install.meteor.com/ | sh
+#install wicd
+apt-get install -y wicd
