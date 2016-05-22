@@ -48,3 +48,11 @@ apt-get install -y curl
 curl https://install.meteor.com/ | sh
 #install wicd
 apt-get install -y wicd
+apt-get remove network-manager network-manager-gnome network-manager-pptp network-manager-pptp-gnome
+#install chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+apt-get update
+apt-get install -y google-chrome-stable
+
+
